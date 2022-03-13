@@ -1,0 +1,11 @@
+.fecha{
+
+    margin: 10px auto;/* arriba y abajo cero lados auto afuera del contenedor */
+    padding: 0px; /* espacios dentro del contenedor*/
+    width: 1000px; /* ocupacion en el area */
+    text-align: center; /* texto centrado */
+}
+.seleccion{
+    width: 15%; /*CAMPOS DE SELECCION DE FECHA*/
+    float: left;
+}

@@ -1,0 +1,222 @@
+body{
+    font-family: 'PT Mono', monospace; /* tipo de letra en el cuerpo de la PAGINA HTML */
+    /*background-color:#333;*/
+}
+.actualizaP{
+ width: 300px;
+}
+.consulta:hover{
+	border: 1px solid rgb(29, 35, 46); /* borde y color del mismo */
+    border-radius: 10px;/* borde CURVO*/
+	
+}
+.titulo{
+    background: rgb(30, 210, 156); /* fondo del titulo principal */
+    margin: 10px auto;/* arriba y abajo cero lados auto afuera del contenedor */
+    padding: 0px; /* espacios dentro del contenedor*/
+    width: 1000px; /* ocupacion en el area */
+    text-align: center; /* texto centrado */
+    border: 1px solid rgb(29, 35, 46); /* borde y color del mismo */
+    border-radius: 10px;/* borde CURVO*/
+    font-size: 25px; /* Tamano de la letra */
+    box-shadow: 1px 1px 8px 8px #888888; /* BORDE SOMBRA */
+}
+h2{
+    font-weight: 300;
+}
+p{
+    font-weight: 300; /* grosor de letra */
+    font-size: unset;
+}
+.container{
+    /*  padding: 100px; */
+     margin: 0 auto; /* 0 arriba y abajo auto a los lados */
+     width: 1000px;
+     /* text-align: center; */
+     border-radius: 5px;
+    /* background-color: #f2f2f2; */
+     padding: 15px;
+ }
+ .flexi{
+    display: flex;
+    flex-wrap: wrap; /* LOS ELEMENTOS ocupan el ancho disponible */
+}
+.colum{
+    background: #b3d8da;
+    color: hsl(93, 82%, 2%);
+    border: 1px solid rgb(29, 35, 46);
+    margin: 0 auto;/* arriba y abajo cero lados auto */
+    padding: 10px; /* espacios dentro del contenedor */
+    border-radius: 10px;/* borde curvo */
+    /*box-shadow: 10px 10px 5px blueviolet; /* sombreado */
+    width: 60%; /* ocupacion en seccion */
+    box-sizing: border-box; /* calculo de los contenedores */
+}
+
+.btn-precio1{
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 600; /* GROSOR DE LA LETRA */
+  font-size: 20px;  /* TAMANO DE LA LETRA */
+  color: #181515;
+  background-color: #1883ba;
+  border-radius: 6px;
+  border: 2px solid #0016b0;
+  margin-bottom: 1px; /*ESPACIO ENTRE BOTONES*/
+  margin: 0 auto;
+
+}
+
+.btn-precio1:hover{
+  color: #1883ba;
+  background-color: #ffffff;
+  }
+
+.btn-precio{
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600; /* GROSOR DE LA LETRA */
+    font-size: 20px;  /* TAMANO DE LA LETRA */
+    color: #181515;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+    margin-bottom: 1px; /*ESPACIO ENTRE BOTONES*/
+    margin: 0 auto;
+
+}
+.btn-precio:hover{
+color: #1883ba;
+background-color: #ffffff;
+}
+.mayusculas{
+    text-transform: uppercase;
+}
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+/*input[type=date]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+	 float: left;
+  }
+.fechaSelect{
+	  width: 100%;
+    padding: 50px;
+    border: 15px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    float: left;
+ }*/
+.fechaSelect{
+  width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+/* Style the label to display next to the inputs */
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-weight: 1000;
+    color: rgb(29, 35, 46);
+    font-size: 15px;
+   
+  }
+  /* Style the submit button */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
+input[type=text]:focus {
+  border: 5px solid rgb(30, 210, 156);
+}
+
+input[type=text]:hover {
+  border: 5px solid rgb(30, 210, 156);
+}
+
+.tcenter{
+    text-align: center;
+    align-items: center; 
+}
+.seleccion{
+    width: 20%; /*CAMPOS DE SELECCION DE FECHA*/
+    float: left;
+}
+ 
+/* Floating column for labels: 25% width */
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+   /* Clear floats after the columns */
+   .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media (max-width: 550px){ /* comportamiento segun medidas */
+
+    .colum{
+        width: 45%;
+        /* padding: 11px;
+        margin: 10px 10px 10px 10px; */
+        margin-bottom: 20px;
+    }
+    .container{
+        width: 500px;
+    }
+    p{
+      font-size: small;  
+    }
+}
+@media (max-width: 300px){ /* comportamiento segun medidas */
+
+    .colum{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .container{
+        width: 300px;/* volumen de un seccion */
+    }
+    p{
+        font-size: small; /* tamano letra parrafo */
+    }
+}
+ /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
